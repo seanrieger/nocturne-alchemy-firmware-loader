@@ -8,18 +8,23 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style type="text/css">
-	  .redbutton {
+.redbutton {
+	width: 100%;
+	font-size: 15px;
 	background-color: red;
 	border-color: red;
 	padding-top: 9px;
 	padding-right: 9px;
 	padding-left: 9px;
-	padding-bottom: 9px;
-	margin-top: 15px;
-	margin-right: 15px;
-	margin-left: 15px;
-	margin-bottom: 15px;
-	display: block
+	padding-bottom: 12px;
+	margin-top: 12px;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom: 12px;
+	display: block;
+}
+	  .col-md-3 ul li {
+	font-size: 14px;
 }
 	  header{	background-color: black; display: block; padding: 50px;	margin-bottom: 45px;}
 	  header h1{font-size: 3em; color: white; font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"}
@@ -69,11 +74,11 @@
       <!-- Left Column -->
       <section class="col-md-3">
         <!-- Your first section of code here -->
-        <h2>Slight Of Hand</h2>
-        <br>
+        <h3>Slight Of Hand</h3>
+<br>
 		<p><img class="img-fluid" src="uploader/SlightOfHand.svg" alt="Slight Of Hand Module"/></p>
-        <h3> <span data-offset-key="b2lu3-0-0"><span data-text="true">V1.5.4 </span></span><span data-offset-key="b2lu3-0-1"><span data-text="true">- 01/24/2026&nbsp;</span></span></h3>
-        <p><span data-offset-key="b2lu3-0-3"><span data-text="true">This is a firmware upload for the arduino-based module Slight Of Hand. </span></span> </p>
+        <h4>V1.5.4 - 01/24/2026</h4>
+<p><span data-offset-key="b2lu3-0-3"><span data-text="true">This is a firmware upload for the arduino-based module Slight Of Hand. </span></span> </p>
                 <div id="slightofhand">
           <button type="button" class="btn btn-primary redbutton" arduino-uploader hex-href="./uploader/SlightOfHand_v1-5-4-Stable.hex" board="nano" verify>
     <b>Slight Of Hand v1.5.4</b> (N) [<span class="upload-progress"></span>]
@@ -82,13 +87,13 @@
     <b>Slight Of Hand v1.5.4</b> (O) [<span class="upload-progress"></span>]
     </button>
 </div>
-		<h3 style="">Bug Fixes &amp; Enhancments:</h3>
-		  <ul>
-            <li><strong>The portamento control has been optimized</strong> to feel more musical with 70% of the potentiometer dedicated to the faster portamento speeds and 30% of the knob dedicated to ultra slow experimental speeds. It's a feel thing.&nbsp;</li>
-            <li><strong>Fixed a bug</strong> that could lead in rare occasions to the module calibration de-calibrating &nbsp;</li>
-            <li>This patch primarily is a <strong>code optimization</strong> to allow the firmware to run more efficiently as well as to simplify development for open source developers wishing to modify the code.  &nbsp;</li>
+          <h4 style="">Bug Fixes &amp; Enhancments:</h4>
+<ul>
+        <li><strong>The portamento control has been optimized</strong> to feel more musical with 70% of the potentiometer dedicated to the faster portamento speeds and 30% of the knob dedicated to ultra slow experimental speeds. It's a feel thing.&nbsp;</li>
+        <li><strong>Fixed a bug</strong> that could lead in rare occasions to the module calibration de-calibrating &nbsp;</li>
+        <li>This patch primarily is a <strong>code optimization</strong> to allow the firmware to run more efficiently as well as to simplify development for open source developers wishing to modify the code.  &nbsp;</li>
 <li> <a href="https://github.com/seanrieger/slight-of-hand">Slight Of Hand GitHub Repository</a>&nbsp;</li>
-          <li><a href="https://drive.google.com/file/d/1pfSBVxrY4w9fOjcBO7ETy-BrEJfydh4G/view?usp=drive_link">Firmware 1.5.4 User Manual (With Firmware Flashing Instructions&nbsp;</a></li>
+        <li><a href="https://drive.google.com/file/d/1pfSBVxrY4w9fOjcBO7ETy-BrEJfydh4G/view?usp=drive_link">Firmware 1.5.4 User Manual (With Firmware Flashing Instructions&nbsp;</a></li>
         </ul>
 
 
@@ -98,11 +103,11 @@
       <!-- Middle Column -->
       <section class="col-md-3">
         <!-- Your second section of code here -->
-        <h2>Arp Of Darkness</h2>
-		<br>
+        <h3>Arp Of Darkness</h3>
+<br>
 <p><img class="img-fluid" src="uploader/ArpOfDarkness.svg" alt="Arp Of Darkness Module"/></p>
-        <h3>V1.3.2 - 02/25/2025&nbsp;</h3>
-        <p>          This is a firmware upload for the arduino-based Arp Of Darkness.&nbsp;</p>
+        <h4>V1.3.2 - 02/25/2025&nbsp;</h4>
+<p>          This is a firmware upload for the arduino-based Arp Of Darkness.&nbsp;</p>
 <div id="arpofdarkness">
         <button type="button" class="btn btn-primary redbutton" arduino-uploader hex-href="./uploader/ArpOfDarknessV1_3_2_Beta.hex" board="nano" verify>
     <b>Arp Of Darkness v1.3.2</b> (N) [<span class="upload-progress"></span>]
@@ -111,7 +116,7 @@
     <b>Arp Of Darkness v1.3.2</b> (O) [<span class="upload-progress"></span>]
     </button>
 </div>		  
-        <h3>New Features:</h3>
+        <h4>New Features:</h4>
 <ul>
           <li><b>Save sequence&nbsp;</b>- Allows the user to save the current sequence buffer to EEPROM&nbsp;</li>
         <li><strong>Load saved sequence</strong>- Allows the user to immediately load the saved sequence and begin playback</li>
@@ -120,7 +125,7 @@
           <li><strong>Boot to sequence:</strong> By default, the Arp Of Darkenss now loads in the saved sequence on startup&nbsp;</li>
 
         </ul>
-<h3>&nbsp;Bug Fixes &amp; Enhancments:</h3>
+<h4>&nbsp;Bug Fixes &amp; Enhancments:</h4>
 <ul>
   <li>Fixed bug with Octave down long-press to shift playback modes not supressing the octave shift causing accidental octave down shifting.&nbsp; &nbsp;&nbsp;</li>
   <li><a href="https://drive.google.com/file/d/1MS-7iPzdtaOeB5z8hnXPzBT5Yj8Hj4cP/view?usp=drive_link">Firmware 1.3.2 User Manual (With Firmware Flashing Instructions)&nbsp;</a></li>
@@ -133,11 +138,11 @@
       <!-- Right Column -->
        <section class="col-md-3">
         <!-- Your second section of code here -->
-        <h2>Seventh Summoner</h2>
-		<br>
+        <h3>Seventh Summoner</h3>
+<br>
 <p><img class="img-fluid" src="uploader/SeventhSummoner.svg" alt="Seventh Summoner Module"/></p>
-        <h3>V1.1.0 - 09/07/2025&nbsp;</h3>
-        <p>          This is the latest firmware upload for the arduino-based Seventh Summoner.&nbsp;</p>
+        <h4>V1.1.0 - 09/07/2025&nbsp;</h4>
+<p>          This is the latest firmware upload for the arduino-based Seventh Summoner.&nbsp;</p>
 <div id="SeventhSummoner">
         <button type="button" class="btn btn-primary redbutton" arduino-uploader hex-href="./uploader/SeventhSummonerv1-1-0-Beta.hex" board="nano" verify>
     <b>Seventh Summoner v1.1.0</b> (N) [<span class="upload-progress"></span>]
@@ -146,14 +151,14 @@
     <b>Seventh Summoner v1.1.0&nbsp;</b> (O) [<span class="upload-progress"></span>]
     </button>
 </div>		  
-        <h3>New Features:</h3>
-        <ul>
-          <li>New "Slight Of Hand" mode - Allows the user to boot into a CV Keyboard mode that functions like the Slight Of Hand module by simply holding the Shift/High C button during power on and boot. &nbsp;</li>
+        <h4>New Features:</h4>
+<ul>
+        <li>New "Slight Of Hand" mode - Allows the user to boot into a CV Keyboard mode that functions like the Slight Of Hand module by simply holding the Shift/High C button during power on and boot. &nbsp;</li>
         </ul>
-		<h3>Bug Fixes &amp; Enhancments:</h3>
-		<ul>
-		  <li>Fixed a critical bug where in rare occurances calibration data could be corrupted and zeroed out due to EEPROM protected address being overwritten resulting in user having to recalibrate the module&nbsp;</li>
-		  <li><a href="https://drive.google.com/file/d/16Pa9mtP0_f8jYMcTW8WalWJ3UXZKYLAh/view?usp=sharing">Firmware 1.1.0 User Manual (With Firmware Flashing Instructions)&nbsp;</a></li>
+		<h4>Bug Fixes &amp; Enhancments:</h4>
+<ul>
+	    <li>Fixed a critical bug where in rare occurances calibration data could be corrupted and zeroed out due to EEPROM protected address being overwritten resulting in user having to recalibrate the module&nbsp;</li>
+	    <li><a href="https://drive.google.com/file/d/16Pa9mtP0_f8jYMcTW8WalWJ3UXZKYLAh/view?usp=sharing">Firmware 1.1.0 User Manual (With Firmware Flashing Instructions)&nbsp;</a></li>
 		</ul>
 		<p>&nbsp;</p>
 
@@ -165,11 +170,11 @@
 <!-- Right Column -->
       <section class="col-md-3">
         <!-- Your second section of code here -->
-        <h2>Shroud Of Turing</h2>
-		<br>
+        <h3>Shroud Of Turing</h3>
+<br>
 <p><img class="img-fluid" src="uploader/ShroudOfTuring.svg" alt="Seventh Summoner Module"/></p>
-        <h3>V1.2.0 - 02/25/2026&nbsp;</h3>
-        <p>          This is the latest firmware upload for the arduino-based Shroud Of Turing.&nbsp;</p>
+        <h4>V1.2.0 - 02/25/2026&nbsp;</h4>
+<p>          This is the latest firmware upload for the arduino-based Shroud Of Turing.&nbsp;</p>
 <div id="ShroudOfTuring">
         <button type="button" class="btn btn-primary redbutton" arduino-uploader hex-href="./uploader/ShroudOfTuring_v1-2-0-Stable.hex" board="nano" verify>
     <b>Shroud Of Turing v1.2.0</b> (N) [<span class="upload-progress"></span>]
@@ -178,9 +183,9 @@
     <b>Shroud Of Turing v1.2.0</b> (O) [<span class="upload-progress"></span>]
     </button>
 </div>		  
-        <h3>New Features:</h3>
-        <ul>
-          <li>The Shroud of Turing is a 16-bit performance-focused shift register sequencer with musical quantization, inspired by the Turing Machine. It generates pseudo-random CV sequences that can lock into repeating patterns or evolve over time. What sets it apart is the ability to quantize output to custom scales built from the included keyboard, with six memory slots for saving and recalling your favorite scales in real-time.</li>
+        <h4>New Features:</h4>
+<ul>
+        <li>The Shroud of Turing is a 16-bit performance-focused shift register sequencer with musical quantization, inspired by the Turing Machine. It generates pseudo-random CV sequences that can lock into repeating patterns or evolve over time. What sets it apart is the ability to quantize output to custom scales built from the included keyboard, with six memory slots for saving and recalling your favorite scales in real-time.</li>
 		<li><a href="https://drive.google.com/file/d/1jSNkt3ewQHmfnlBp57IaFHBI-bqnCINJ/view?usp=drive_link">Firmware v1.2.0 User Manual (With Firmware Flashing Instructions)&nbsp;</a></li>
 		</ul>
 		  <p>&nbsp;</p>
