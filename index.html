@@ -103,32 +103,29 @@
       <!-- Middle Column -->
       <section class="col-md-3">
         <!-- Your second section of code here -->
-        <h3>Arp Of Darkness</h3>
-<br>
+        <h2>Arp Of Darkness</h2>
+		<br>
 <p><img class="img-fluid" src="uploader/ArpOfDarkness.svg" alt="Arp Of Darkness Module"/></p>
-        <h4>V1.3.2 - 02/25/2025&nbsp;</h4>
-<p>          This is a firmware upload for the arduino-based Arp Of Darkness.&nbsp;</p>
+        <h4>V1.4.0 : 05/29/2026&nbsp;</h4>
+<p>          This is a the latest firmware upload for the arduino-based Arp Of Darkness.&nbsp;</p>
 <div id="arpofdarkness">
-        <button type="button" class="btn btn-primary redbutton" arduino-uploader hex-href="./uploader/ArpOfDarknessV1_3_2_Beta.hex" board="nano" verify>
-    <b>Arp Of Darkness v1.3.2</b> (N) [<span class="upload-progress"></span>]
+        <button type="button" class="btn btn-primary redbutton" arduino-uploader hex-href="./uploader/ArpOfDarknessV1_4_0_Stable.hex" board="nano" verify>
+    <b>Arp Of Darkness v1.4.0</b> (N) [<span class="upload-progress"></span>]
     </button>
-  <button type="button" class="btn btn-primary redbutton" arduino-uploader hex-href="./uploader/ArpOfDarknessV1_3_2_Beta.hex" board="nanoOldBootloader" verify>
-    <b>Arp Of Darkness v1.3.2</b> (O) [<span class="upload-progress"></span>]
+  <button type="button" class="btn btn-primary redbutton" arduino-uploader hex-href="./uploader/ArpOfDarknessV1_4_0_Stable.hex" board="nanoOldBootloader" verify>
+    <b>Arp Of Darkness v1.4.0</b> (O) [<span class="upload-progress"></span>]
     </button>
 </div>		  
         <h4>New Features:</h4>
 <ul>
-          <li><b>Save sequence&nbsp;</b>- Allows the user to save the current sequence buffer to EEPROM&nbsp;</li>
-        <li><strong>Load saved sequence</strong>- Allows the user to immediately load the saved sequence and begin playback</li>
-        <li><strong>Cued loading of sequence&nbsp; </strong>- Allows the user to cue the sequence to load and playback on the first note of the next loop&nbsp;</li>
-        <li><strong>Clear: </strong>Allow the user to clear the current sequence buffer&nbsp;&nbsp;</li>
-          <li><strong>Boot to sequence:</strong> By default, the Arp Of Darkenss now loads in the saved sequence on startup&nbsp;</li>
-
-        </ul>
-<h4>&nbsp;Bug Fixes &amp; Enhancments:</h4>
+          <li><b>Remix Buffer&nbsp;</b>- Randomly shuffles the note order in the buffer on the next clock. Note values are preserved — only the playback order changes.</li>
+        <li><strong>Auto-Remix Modes</strong>- Automatically reshuffles the buffer every 2, 4, or 8 loops.</li>
+        <li><strong>Slight Of Hand Mode&nbsp;&nbsp;</strong>- Allows the user to boot into a CV Keyboard mode that functions like the Slight Of Hand module by simply holding the Shift/High C button during power on and boot.</li>
+</ul>
+<h4>Bug Fixes &amp; Enhancments</h4>
 <ul>
-  <li>Fixed bug with Octave down long-press to shift playback modes not supressing the octave shift causing accidental octave down shifting.&nbsp; &nbsp;&nbsp;</li>
-  <li><a href="https://drive.google.com/file/d/1MS-7iPzdtaOeB5z8hnXPzBT5Yj8Hj4cP/view?usp=drive_link">Firmware 1.3.2 User Manual (With Firmware Flashing Instructions)&nbsp;</a></li>
+  <li>Fixed bug that ripped a small hole in the time-space continuum that may or may not end everything in existence as we know it... again. (Oops?)</li>
+  <li><a href="https://drive.google.com/file/d/1a5cSqkKEFPMG6DMvZ3PCIU5kCSRXchtU/view?usp=drive_link">Firmware 1.4.0 User Manual (With Firmware Flashing Instructions)</a></li>
 </ul>
 <p>&nbsp;</p>
 <!-- PLACEHOLDER -->
